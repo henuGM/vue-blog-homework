@@ -2,13 +2,13 @@
   <div class="home-page">
     <div class="banner">
       <div class="container">
-        <h1 class="logo-font">conduit</h1>
-        <p>A place to share your knowledge.</p>
+        <h1 class="logo-font">程序员社区</h1>
+        <p>专注于分享知识</p>
       </div>
     </div>
     <div class="container page">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-12">
           <div class="feed-toggle">
             <ul class="nav nav-pills outline-active">
               <li v-if="isAuthenticated" class="nav-item">
@@ -17,7 +17,7 @@
                   class="nav-link"
                   active-class="active"
                 >
-                  Your Feed
+                  我的文章
                 </router-link>
               </li>
               <li class="nav-item">
@@ -27,7 +27,7 @@
                   class="nav-link"
                   active-class="active"
                 >
-                  Global Feed
+                  所有文章
                 </router-link>
               </li>
               <li class="nav-item" v-if="tag">
@@ -42,15 +42,6 @@
             </ul>
           </div>
           <router-view></router-view>
-        </div>
-        <div class="col-md-3">
-          <div class="sidebar">
-            <p>Popular Tags</p>
-            <div class="tag-list">
-              <RwvTag v-for="(tag, index) in tags" :name="tag" :key="index">
-              </RwvTag>
-            </div>
-          </div>
         </div>
       </div>
     </div>

@@ -3,10 +3,10 @@
     <div class="container page">
       <div class="row">
         <div class="col-md-6 offset-md-3 col-xs-12">
-          <h1 class="text-xs-center">Sign up</h1>
+          <h1 class="text-xs-center">注册</h1>
           <p class="text-xs-center">
             <router-link :to="{ name: 'login' }">
-              Have an account?
+              还没注册?
             </router-link>
           </p>
           <ul v-if="errors" class="error-messages">
@@ -38,7 +38,7 @@
               />
             </fieldset>
             <button class="btn btn-lg btn-primary pull-xs-right">
-              Sign up
+              注册
             </button>
           </form>
         </div>
